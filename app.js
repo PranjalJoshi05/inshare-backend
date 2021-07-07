@@ -26,7 +26,7 @@ app.set('view engine','ejs');
 
 //Routes
 
-app.get('/',(req,res){
+app.get('/',(req,res)=>{
   res.send('InShare backend');
 });
 
