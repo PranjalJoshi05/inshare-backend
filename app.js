@@ -12,13 +12,7 @@ app.use(express.json());
 const connectDB = require('./config/db');
 connectDB();
 
-//Cors
-const corsOptions = {
-  origin: process.env.ALLOWED_CLIENTS.split(',')
-  // ['http://localhost:3000', 'http://localhost:5000']
-}
-
-app.use(cors(corsOptions));
+app.use(cors());
 
 //Template engine
 // app.set('views', path.join(__dirname, '/views'));
